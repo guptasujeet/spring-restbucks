@@ -34,6 +34,8 @@ import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.validation.Validator;
+import org.springsource.restbucks.validator.ItemValidator;
 
 /**
  * Spring JavaConfig configuration class to setup a Spring container and infrastructure components like a
@@ -91,4 +93,9 @@ class ApplicationConfig {
 		txManager.setEntityManagerFactory(entityManagerFactory().getObject());
 		return txManager;
 	}
+
+    @Bean
+    public Validator beforeSaveItemValidator(){//When method name is beforeCreateItemValidator validation is working fine
+        return new ItemValidator();
+    }
 }
