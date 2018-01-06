@@ -21,7 +21,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 
 	<dependencies>
 
-		<!-- Spring Data REST 456 -->
+		<!-- Spring Data REST 2 -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -45,7 +45,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 			<scope>test</scope>
 		</dependency>
 
-		<!-- JDK 8 DateTime support for Jackson -->
+		<!-- JDK 8 DateTime support for Jackson 2-->
 
 		<dependency>
 			<groupId>com.fasterxml.jackson.datatype</groupId>
