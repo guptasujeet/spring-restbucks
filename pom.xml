@@ -21,7 +21,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 
 	<dependencies>
 
-		<!-- Spring Data REST -->
+		<!-- Spring Data REST 456 -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
